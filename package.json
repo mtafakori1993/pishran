@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:cpanel": "next build && echo \"Upload everything inside the out/ folder to public_html\"",
+    "preview": "npx --yes serve@14 out -l 5500",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "images:download": "node scripts/download-service-images.mjs"
   },
   "dependencies": {
     "next": "16.2.6",
